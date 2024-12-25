@@ -1,0 +1,762 @@
+.navbar .nav-link {
+    font-size: 1.4rem !important;
+    color: #666666  !important;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased; 
+}
+
+
+.navbar .nav-link:hover {
+    color: red !important;
+    text-decoration: none !important;
+}
+header {
+    margin-top: 9px;
+    position: fixed;
+    width: 100%;
+    z-index: 1030; 
+    top: 0;
+    background-color: white;
+    margin: 0; 
+    padding: 0; 
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+}
+main {
+    padding-bottom: 20px; 
+    min-height: calc(100vh - 150px);
+   
+}
+footer.foot-text {
+    padding-top: 2px;  /* Reduce space inside the footer content */
+    padding-bottom: 30px;  /* Adjust bottom padding */
+}
+
+footer .container {
+    padding-top: 2px;  /* You can also target the container inside footer */
+}
+
+footer .row {
+    margin-bottom: 0;  /* Reduce bottom margin in the row */
+}
+
+footer .col-md-4 {
+    padding-bottom: 2px;  /* Reduce padding in the footer columns */
+}
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .foot-sec-1 {
+        margin-left: -105px;
+    }
+}
+.foot-sec-1 p {
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+    font-size: 18px; /* Comfortable font size */
+    line-height: 1.4; /* Adds space between lines */
+    color: #555555; /* Soft gray for the font color */
+    text-align: justify;
+    margin-top: 10px; 
+}
+.foot-sec-2 li{
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+    font-size: 18px; 
+    color: #555555;
+}
+.himage2{
+    background: #fff;
+    
+}
+.hfont1{
+    font-family: sans-serif;
+    font-size: 4em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.hpara1{
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+  font-size: 18px; /* Comfortable font size */
+  line-height: 1.4; /* Adds space between lines */
+  color: #555555; /* Soft gray for the font color */
+  text-align: justify;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 16px;
+}
+.card-section{
+    background: #fff;
+}
+.hfont2{
+    font-family: sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.custom-card {
+    width: 100%; /* Ensures cards take full width of their column */
+    display: flex; /* Flexbox layout for the card */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push button to the bottom */
+    border-radius: 20px; /* Rounded corners */
+    background: #fff;/* Gradient background */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%; /* Allow full height */
+    padding: 15px; /* Padding for inner spacing */
+    min-height: 350px; /* Minimum height for uniformity */
+    border: 2px solid #555555; /* Subtle border with primary color */
+     
+    transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for border and shadow */
+  .custom-card:hover {
+    border: 1px solid #ed1c24; /* Darker border color on hover */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+  }
+  
+  /* Title Styles */
+  .card-title {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    color: #1a1a1a;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px; /* Space below the title */
+    margin-top: 10px;
+  }
+  
+  /* Text Styles */
+  .card-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #555555;
+    margin-bottom: 10px; /* Space between text and button */
+    flex-grow: 1; /* Allow text content to grow and fill available space */
+    margin-top: 0; /* Ensure no extra margin at the top of the description */
+  }
+  
+  /* Card Body Adjustment */
+  .custom-card .card-body {
+    display: flex; /* Flexbox for the card body */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Ensure button is pushed to the bottom */
+    padding: 0; /* Remove padding for better spacing */
+    height: 100%; /* Ensure full height */
+    margin: 0;
+  }
+  
+  /* Explore Button Styles */
+  .explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ed1c24;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    align-self: center; /* Center the button horizontally */
+    margin-top: 10px; /* Add a little space above the button */
+    width: auto; /* Button width will be based on its content */
+    height: auto; /* Button height will remain according to its content */
+    margin-bottom: 10px; /* Space at the bottom */
+  }
+  
+  /* Explore Button Hover Effect */
+  .explore-button:hover {
+    background-color: #e62e2e;
+  }
+  
+  /* Adjust Column Layout for Grid */
+  .col-md-2 {
+    width: 20%; /* Increase card width to fill more space */
+    display: flex;
+    justify-content: space-between; /* Adjust column layout */
+    flex-direction: column;
+    margin-bottom: 30px; /* Add space between rows of cards */
+  }
+  
+  /* Adjust Row Spacing */
+  .row {
+    margin-left: -15px !important; /* Override Bootstrap's default row margins */
+    margin-right: -15px !important; /* Override Bootstrap's default row margins */
+  }
+  
+  /* Adjust Column Padding */
+  .col-md-2, .col-sm-4, .col-12 {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  /* Media Query for Mobile */
+  @media (max-width: 767px) {
+    .col-md-2 {
+      width: 100% !important; /* Force full width on small screens */
+    }
+    .hfont3 {
+        padding-left: 118px; /* Adjust to your preference */
+      }
+      .hpara2 {
+        padding-left: 9px;
+      }
+      .custom-card {
+        width: 80%; /* Reduce card width to 80% of the column */
+        margin: 0 auto; /* Center the card horizontally */
+        
+      }
+      .hend img{
+        width:auto;
+        max-width: 100%;
+        margin-left: 5px !important;
+        display: block;
+        
+
+      }
+  }
+  .hfont3{
+    font-family: sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: center;
+    margin-top: -3px;
+    margin-bottom: 15px;
+    margin-left: -312px;
+    font-weight: 700;
+    line-height: 1.2em;
+
+  }
+  .hpara2{
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+  font-size: 18px; /* Comfortable font size */
+  line-height: 1.4; /* Adds space between lines */
+  color: #555555; /* Soft gray for the font color */
+  text-align: justify;
+  margin-left: 3px;
+  margin-right: 25px;
+  margin-bottom: 4px;
+  margin-top: 3px;
+  }
+  .hend{
+    background: #fff; 
+  }
+  .hend img{
+    width:100%;
+    margin-left: -60px
+  }
+  .abt-hfont2{
+    font-family: sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: center;
+    margin-top: -238px;
+    margin-bottom: 39px;
+    margin-left: -73px;
+    font-weight: 700;
+    line-height: 1.2em;
+  }  
+  .abt-para1{
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+  font-size: 18px; /* Comfortable font size */
+  line-height: 1.4; /* Adds space between lines */
+  color: #555555; /* Soft gray for the font color */
+  text-align: justify;
+  margin-left: -45px;
+  margin-right: 25px;
+  margin-bottom: 4px;
+  margin-top: 3px;
+  
+  }
+  .abt-para .explore-button{
+    margin-left: -50px;
+    margin-bottom: 10%;
+  }
+.aboutimg1-wrapper h2{
+    font-family: sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: justify;
+    margin-top: -61px;
+    margin-bottom: 39px;
+    margin-left: -85px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.aboutimg1-wrapper {
+    width: 100vw;  
+    margin-left: calc(-50vw + 50%);  
+    background-color: #fff;  
+     
+    padding-top: 250px;
+    padding-bottom: 180px;
+}
+
+.aboutimg1 {
+    
+    padding-left: 15px;  
+    padding-right: 15px;  
+}
+.aboutimg1 img {
+    max-width: 100%; 
+    height: auto;    
+}
+.abt-section img{
+    position: relative;
+    max-width: 100%; 
+    height: auto;
+    left: -33px;
+    width: 501px;
+    margin-top: 59px;
+    margin-bottom: 59px;
+}
+.abt-section{
+    background-color: #fff;
+}
+.abt-para{
+    margin-top: 150px;
+}
+@media (max-width: 767.98px) {
+    .aboutimg1 img {
+        margin-bottom: 50px; /* Adds space between images */
+    }
+    .aboutimg1-wrapper h2{
+        font-family: sans-serif;
+        font-size: 2.rem; /* Adjust size as needed */ 
+        color: #1a1a1a; /* Dark gray color */
+        text-align: center;
+        margin-top: -61px;
+        margin-bottom: 39px;
+        margin-right: 20px;
+        margin-left: 15px;
+        font-weight: 700;
+        line-height: 1.2em;
+        word-spacing: 5px;
+    }
+    .aboutimg1-wrapper h2 br{
+        display: none;
+    }
+    .aboutimg1-wrapper h2 .nonbreaking-space{
+        display: none;
+    }
+    .abt-hfont2{
+        font-family: sans-serif;
+        font-size: 2.2rem; /* Adjust size as needed */ 
+        color: #1a1a1a; /* Dark gray color */
+        text-align: center;
+        margin-top: -238px;
+        margin-bottom: 39px;
+        margin-left: 5px;
+        margin-right: 20px;
+        font-weight: 700;
+        line-height: 1.2em;
+      }  
+      .abt-para1{
+        
+      font-size: 18px; /* Comfortable font size */
+      line-height: 1.4; /* Adds space between lines */
+      color: #555555; /* Soft gray for the font color */
+      text-align: justify;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-bottom: 4px;
+      margin-top: 3px;
+      
+      }
+      .abt-para .explore-button{
+        margin-left: 5px;
+        margin-bottom: 10%;
+      }
+      
+}
+.menu-top h2{
+    font-family: sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2em;
+
+}
+.menu-top p{
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+  font-size: 18px; /* Comfortable font size */
+  line-height: 1.4; /* Adds space between lines */
+  color: #555555; /* Soft gray for the font color */
+  text-align: center;
+}
+
+.contact-container {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.contact-left {
+   background-color: #fff;
+    height: 100vh;
+    padding-top: 350px;
+    padding-left: 110px;
+    padding-right: 20px;
+    
+}
+
+
+.contact-right {
+    background-color: #ed1c24;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.overlapping-div {
+    position: absolute; 
+    top: 55%; 
+    left: 66%; 
+    transform: translate(-50%, -50%); 
+    background: white; 
+    color: #333;
+    width: 59%; 
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    border: 1px solid #f5c6c6;
+    z-index: 10; 
+    min-height: 500px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-control.rounded-3 {
+    border-radius: 10px; 
+}
+.space-below {
+    height: 225px; 
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    
+}
+
+.contact-item i {
+    font-size: 1.5rem; /* Icon size */
+    margin-right: 10px; /* Space between icon and text */
+    color: #007bff; /* Icon color */
+    margin-left: 1px;
+}
+
+.contact-item span {
+    font-family: sans-serif;
+    font-size: 1.3em; /* Adjust size as needed */ 
+    color: #555555; /* Dark gray color */
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.contact-container .form-label{
+    font-family: sans-serif;
+    font-size: 1.3em; /* Adjust size as needed */ 
+    color: #555555; /* Dark gray color */
+    text-align: center;
+    font-weight: 700;
+}
+.contact-container input::placeholder,
+.contact-container textarea::placeholder{
+    font-family: sans-serif;
+    color: #555555;
+}
+.contact-container input,
+.contact-container textarea {
+    border-color: #555555;  
+    border-radius: 20px !important;  
+}
+.overlapping-div h3{
+    font-family: sans-serif;
+    font-size: 2em; /* Adjust size as needed */ 
+    color: #1a1a1a; /* Dark gray color */
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.contact-button{
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #ed1c24;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    align-self: center; 
+    width: auto; 
+    height: auto; 
+    }
+    @media (max-width: 768px) {
+        .contact-item {
+            margin-bottom: 2px; /* Increase the bottom margin for smaller screens */
+        }
+        .contact-container{
+            margin-bottom: -20%;
+        }
+    }
+
+.menu-top{
+    padding-top: 192px;
+    text-align: center;
+}
+.menu-description{
+    max-width: 600px; 
+    margin: 0 auto; 
+    
+    line-height: 1.6; 
+}
+.menu-middle {
+    padding-top: 60px; /* Top padding for spacing */
+    margin-left: 320px; /* Reset margin to align correctly */
+}
+
+/* Buttons */
+.menu-button {
+    display: inline-flex;  /* Use inline-flex for better control over alignment */
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; /* Vertically center the text */
+    padding: 10px 20px; /* Adjust padding for button size */
+    border: 2px solid lightgrey;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #81644d;
+    font-size: 1em;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    box-sizing: border-box; /* Include padding in width */
+    width: auto; /* Let the button expand to fit the content */
+    min-width: 120px; /* Optional: set a minimum width for consistency */
+    overflow: visible; /* Prevent text overflow */
+    white-space: nowrap; /* Prevent text wrapping */
+    margin: 0; /* No external margin for buttons */
+    height: auto; 
+}
+
+.menu-button:hover {
+    background-color: red; /* Change button background on hover */
+    color: white;
+}
+
+/* Container behavior */
+.menu-middle .container {
+    display: flex;
+    gap: 5px; /* Reduced space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap */
+    width: 100%; /* Ensure full width */
+    margin: 0; /* No extra margin */
+}
+
+/* Adjust layout for small devices */
+@media (max-width: 767px) {
+    .menu-middle .row {
+        justify-content: flex-start; /* Align buttons to the left by default */
+        flex-wrap: wrap; /* Allow wrapping for rows */
+    }
+
+    .menu-middle .row .col-4 {
+        flex: 0 0 33.33%; /* Ensure 3 buttons in the first row (small devices) */
+        max-width: 33.33%;
+        text-align: center; /* Center-align buttons inside columns */
+    }
+
+    /* For the last 2 buttons (centered) */
+    .menu-middle .row .col-6 {
+        flex: 0 0 50%; /* Ensure 2 buttons per row in the second row */
+        max-width: 50%;
+        text-align: center; /* Center-align buttons inside columns */
+    }
+
+    .menu-middle .row:last-child {
+        justify-content: center; /* Center the last row with 2 buttons */
+    }
+    .menu-middle {
+        padding-top: 60px; /* Top padding for spacing */
+        margin-left: 0; /* Reset margin to align correctly */
+    }
+    .menu-end .card {
+        width: 80%; /* Reduce the width of the cards */
+    position: relative; /* Enable relative positioning */
+    right: -45px; /* Move the card 50px to the right */
+    margin: 0 auto;
+    }
+    
+    
+}
+
+/* For medium devices (≥ 768px and < 992px), keep the default layout as is, do not change */
+@media (min-width: 768px) {
+    .menu-middle .row .col-4 {
+        flex: 0 0 25%; /* Ensure 4 buttons per row on medium devices (tablets) */
+        max-width: 25%;
+    }
+}
+
+
+
+
+.menu-top {
+    padding-top: 180px;
+}
+
+.menu-middle {
+    padding-top: 40px;
+
+}
+.menu-end {
+    padding-top: 60px;
+}
+.menu-end .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0; /* Remove row margin */
+}
+
+.menu-end .col-md-3, .menu-end .col-12 {
+    padding: 10px; /* Consistent padding for spacing */
+    box-sizing: border-box; /* Padding and borders included in width */
+}
+
+/* Medium Devices: 4 equal cards in a row */
+@media (min-width: 768px) {
+    .menu-end .col-md-3 {
+        flex: 0 0 25%; /* Force equal 25% width */
+        max-width: 25%; /* Prevent stretching */
+    }
+
+    /* Card Image Styling */
+    .menu-end .card img {
+        height: 300px; /* Set fixed height for medium devices */
+        object-fit: cover; /* Crop or scale image proportionally */
+        width: 100%; /* Ensure it takes the full width */
+        border-top-left-radius: 20px; /* Apply rounded corners to the image */
+        border-top-right-radius: 20px; /* Apply rounded corners to the image */
+    }
+}
+
+/* Small Devices: 1 card per row */
+@media (max-width: 767px) {
+    .menu-end .col-12 {
+        flex: 0 0 100%; /* Full width */
+        max-width: 100%;
+    }
+
+    /* Card Image Styling */
+    .menu-end .card img {
+        height: 400px; /* Set a smaller height for small devices */
+        object-fit: cover; /* Crop or scale image proportionally */
+        width: 100%; /* Full width */
+        border-top-left-radius: 20px; /* Apply rounded corners to the image */
+        border-top-right-radius: 20px; /* Apply rounded corners to the image */
+    }
+}
+
+/* Card Styles */
+.menu-end .card {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px; /* Apply rounded corners for all edges */
+    height: 100%; /* Ensure card takes full height */
+    overflow: hidden; /* Hide any content that exceeds the card boundary */
+    margin: 0; /* Ensure no card margin */
+    background: white; /* Ensure background covers the card */
+}
+
+/* Card Body Styling */
+.menu-end .card-body {
+    padding: 15px;
+    text-align: center;
+    border-bottom-left-radius: 20px; /* Apply rounded bottom corners to the card body */
+    border-bottom-right-radius: 20px; /* Apply rounded bottom corners to the card body */
+    overflow: hidden; /* Prevent content from spilling over the bottom corners */
+}
+
+/* Optional: Clip the image to ensure it stays inside the card */
+.menu-end .card img {
+    clip-path: inset(0 0 0 0 round 20px); /* Clip image to match rounded corners */
+}
+.item-detail{
+    padding-top: 20%;
+    background-color: #fff; /* Light shade background color */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+    border-radius: 10px;
+}
+.item-detail img{
+    margin-left: 20px;
+    height:500px;
+    width:500px;
+    margin-bottom: 80px;
+}
+.item-detail .desc{
+    padding-top: 15%;
+    padding-left: 90px;
+    font-family: 'Poppins', sans-serif; /* Or 'Open Sans', 'Nunito', etc. */
+    font-size: 18px; /* Comfortable font size */
+    line-height: 1.4; /* Adds space between lines */
+    color: #555555; /* Soft gray for the font color */
+    text-align: justify;
+   
+}
+.item-detail h5{
+    font-family: sans-serif;
+    font-size: 2.5em; /* Adjust size as needed */ 
+    color: #1a1a1a; 
+    font-weight: 700;
+}
+.item-detail .price {
+    font-size: 24px; /* Adjust font size for emphasis */
+    font-weight: bold; /* Make the price bold */
+    color: #e62e2e; /* Change the color (e.g., orange) */
+    display: inline-block; /* Ensures the price is treated as an inline element */
+    margin-top: 5px; /* Optional: Add space above if needed */
+}
+@media (max-width: 767px) {
+    .item-detail .desc {
+        text-align: center; /* Align text content to the left */
+        margin-left: 0; /* Remove any extra left margin */
+        padding-left: 0; /* Remove extra padding if present */
+    }
+    .item-detail img{
+        margin-right: -50px;
+        height:500px;
+        width:95%;
+        margin-bottom: 80px;
+    }
+    
+}

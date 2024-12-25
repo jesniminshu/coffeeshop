@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="container-fluid contact-container">
+    <div class="row">
+        <!-- Left Portion -->
+        <div class="col-md-6 col-12 contact-left">
+            
+            <!-- Location -->
+            <div class="contact-item">
+                <i class="bi bi-geo-alt-fill" style="color: #ed1c24;margin-left: -3px;"></i> <!-- Bootstrap Icon for Location -->
+                <span>123 Main Street, City, Country</span>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="contact-item">
+                <i class="bi bi-telephone-fill" style="color: #ed1c24;margin-left: -1px;"></i> <!-- Bootstrap Icon for Phone -->
+                <span>(+123) 456-7890</span>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-item">
+                <i class="bi bi-envelope-fill" style="color: #ed1c24;"></i> <!-- Bootstrap Icon for Email -->
+                <span>contact@example.com</span>
+            </div>
+            
+        </div>
+
+        <!-- Right Portion -->
+        <div class="col-md-6 col-12 contact-right">
+            <h2 class="text-center">Right Side</h2>
+        </div>
+    </div>
+
+    <!-- Overlapping Div -->
+    <div class="overlapping-div col-12">
+        <h3>Contact Us</h3>
+        {% if success_message %}
+            <!-- Success Message -->
+            <div class="alert alert-success text-center" role="alert">
+                {{ success_message }}
+            </div>
+        {% else %}
+            <!-- Contact Form -->
+            <form method="POST" novalidate>
+                {% csrf_token %}
+
+                <!-- Name -->
+                <div class="mb-3">
+                    <label for="id_name" class="form-label">Name</label>
+                    <input type="text" name="name" id="id_name" 
+                           class="form-control rounded-3" 
+                           placeholder="Enter your name" 
+                           value="{{ form.name.value|default:'' }}" required>
+                    {% if form.name.errors %}
+                        <div class="invalid-feedback d-block">{{ form.name.errors }}</div>
+                    {% endif %}
+                </div>
+
+                <!-- Email Address -->
+                <div class="mb-3">
+                    <label for="id_email" class="form-label">Email Address</label>
+                    <input type="email" name="email" id="id_email" 
+                           class="form-control rounded-3" 
+                           placeholder="Enter your email" 
+                           value="{{ form.email.value|default:'' }}" required>
+                    {% if form.email.errors %}
+                        <div class="invalid-feedback d-block">{{ form.email.errors }}</div>
+                    {% endif %}
+                </div>
+
+                <!-- Phone -->
+                <div class="mb-3">
+                    <label for="id_phone" class="form-label">Phone Number</label>
+                    <input type="text" name="phone" id="id_phone" 
+                           class="form-control rounded-3" 
+                           placeholder="Enter your phone number" 
+                           value="{{ form.phone.value|default:'' }}" required>
+                    {% if form.phone.errors %}
+                        <div class="invalid-feedback d-block">{{ form.phone.errors }}</div>
+                    {% endif %}
+                </div>
+
+                <!-- Subject -->
+                <div class="mb-3">
+                    <label for="id_subject" class="form-label">Subject</label>
+                    <input type="text" name="subject" id="id_subject" 
+                           class="form-control rounded-3" 
+                           placeholder="Enter the subject" 
+                           value="{{ form.subject.value|default:'' }}" required>
+                    {% if form.subject.errors %}
+                        <div class="invalid-feedback d-block">{{ form.subject.errors }}</div>
+                    {% endif %}
+                </div>
+
+                <!-- Message -->
+                <div class="mb-3">
+                    <label for="id_message" class="form-label">Message</label>
+                    <textarea name="message" id="id_message" rows="4" 
+                              class="form-control rounded-3" 
+                              placeholder="Your message" required>{{ form.message.value|default:'' }}</textarea>
+                    {% if form.message.errors %}
+                        <div class="invalid-feedback d-block">{{ form.message.errors }}</div>
+                    {% endif %}
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="contact-button">Submit</button>
+            </form>
+        {% endif %}
+
+    </div>
+        <div class="space-below">
+            
+        </div>
+        
+        
+</div>
+{% endblock %}

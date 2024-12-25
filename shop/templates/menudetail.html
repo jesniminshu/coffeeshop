@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <section class="item-detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 desc">
+                    <h5>{{ item.name }}</h5>
+                        <p>{{ item.description }}<br>
+                            <span class="price">{{ item.price }} AED</span>
+                        
+                </div>
+                <div class="col-md-6 col-12">
+                    <img src="{{ item.image.url }}" class="rounded" alt="Card image cap">   
+                </div>
+            </div>
+        </div>
+    </section>
+    <div>
+        
+    </div>
+    {% endblock %}

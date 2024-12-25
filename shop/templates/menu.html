@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="menu-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-12">
+                <h2>Flavors to Fall For!</h2>
+                <p class="menu-description pt-2">Experience the magic of our menu, offering rich coffees, soothing teas, indulgent pastries, and mouthwatering paninis. Perfect for a cozy catch-up or a moment of blissful indulgence.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="menu-middle">
+    <div class="container">
+        <div class="row justify-content-center">
+            {% for category in categories %}
+            <div class="col-4 col-md-2 d-flex justify-content-center">
+                <a href="{% url 'menu_by_category' category.slug %}" class="menu-button">{{ category.name }}</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- Menu Section -->
+<section class="menu-end">
+    <div class="container">
+        <div class="row">
+            {% for item in items %}
+            <div class="col-md-3 col-12">
+                <a href="{% url 'menu_detail' item_id=item.id %}" class="text-decoration-none">  
+                <div class="card">
+                    <img class="card-img-top" src="{{ item.image.url }}" alt="{{ item.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ item.name }}</h5>
+                    </div>
+                </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+
